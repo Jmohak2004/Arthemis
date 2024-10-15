@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './HealthData.css'; // Import custom CSS for styling
+import '../pages/Healthdata.css'; // Import custom CSS for styling
 import {
   LineChart,
   Line,
