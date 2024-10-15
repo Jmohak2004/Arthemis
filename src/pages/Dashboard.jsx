@@ -102,6 +102,18 @@ const styles = {
     marginTop: '1rem',
     marginBottom: '1rem',
   },
+  button1: {
+    padding: '0.75rem 1.5rem',
+    backgroundColor: '#38b2ac',
+    borderRadius: '0.5rem',
+    color: '#f7fafc',
+    fontSize: '1rem',
+    border: 'none',
+    cursor: 'pointer',
+    marginTop: '1rem',
+    marginBottom: '1rem',
+    marginLeft:'1rem'
+  },
   header: {
     display: "flex",
     justifyContent: "space-between",
@@ -163,6 +175,9 @@ export default function JEEDashboard() {
   const handleHealthButtonClick = () => {
     navigate('/health'); // Navigate to /health
   };
+  const handleProgressButtonClick = () => {
+    navigate('/pro'); // Navigate to /health
+  };
 
   return (<>
       <header style={styles.header}>
@@ -187,6 +202,9 @@ export default function JEEDashboard() {
 
       <span>
         <button style={styles.button} onClick={handleHealthButtonClick}>Check your Health</button>
+      </span>
+      <span>
+        <button style={styles.button1} onClick={handleProgressButtonClick}>Check your progress</button>
       </span>
       
       <div style={styles.grid}>
