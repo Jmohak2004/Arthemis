@@ -4,7 +4,7 @@ import HomePage from './pages/HomePage';
 import Resources from './pages/Resources';
 import Tools from './pages/Tools';
 import Dashboard from './pages/Dashboard';
-import HealthData from './pages/HealthData'; // Import HealthData component
+import HealthData from './pages/Healthdata'; // Import HealthData component
 import { FirebaseProvider } from './context/Firebase'; // Import FirebaseProvider
 import ProgressPage from './pages/ProgressPage';
 
