@@ -25,6 +25,7 @@ const HomePage = () => {
   };
 
   return (
+    <div className="outer">
     <div style={styles.container}>
       <style>
         {`
@@ -102,6 +103,7 @@ const HomePage = () => {
           style={styles.image}
         />
       </section>
+    </div>
     </div>
   );
 };

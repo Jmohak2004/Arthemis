@@ -4,6 +4,7 @@ import HomePage from './pages/HomePage';
 import Resources from './pages/Resources';
 import Tools from './pages/Tools';
 import Dashboard from './pages/Dashboard';
+import HealthData from './pages/HealthData'; // Import HealthData component
 import { FirebaseProvider } from './context/Firebase'; // Import FirebaseProvider
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
             <Route path="/resources" element={<Resources />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/tools" element={<Tools />} />
+            <Route path="/health" element={<HealthData />} /> {/* Add HealthData route */}
             
             {/* 404 Not Found route */}
             <Route path="*" element={<h1>404: Page Not Found</h1>} />

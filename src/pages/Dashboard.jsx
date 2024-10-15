@@ -1,292 +1,54 @@
-// import React from 'react';
-// import { Calendar, Clock, GraduationCap, List, Star } from "lucide-react";
-
-// const cardStyle = {
-//   backgroundColor: 'white',
-//   borderRadius: '0.5rem',
-//   boxShadow: '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)',
-//   overflow: 'hidden',
-// };
-
-// const cardHeaderStyle = {
-//   padding: '1rem',
-//   borderBottom: '1px solid #e5e7eb',
-// };
-
-// const cardTitleStyle = {
-//   fontSize: '1.25rem',
-//   fontWeight: 'bold',
-//   display: 'flex',
-//   alignItems: 'center',
-//   gap: '0.5rem',
-// };
-
-// const cardContentStyle = {
-//   padding: '1rem',
-// };
-
-// const tableStyle = {
-//   width: '100%',
-//   borderCollapse: 'collapse',
-// };
-
-// const thStyle = {
-//   textAlign: 'left',
-//   padding: '0.75rem',
-//   borderBottom: '1px solid #e5e7eb',
-// };
-
-// const tdStyle = {
-//   padding: '0.75rem',
-//   borderBottom: '1px solid #e5e7eb',
-// };
-
-// export default function JEEDashboard() {
-//   return (
-//     <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '1rem' }}>
-//       <h1 style={{ fontSize: '1.875rem', fontWeight: 'bold', marginBottom: '1.5rem' }}>JEE Student Dashboard</h1>
-      
-//       <div style={{ display: 'grid', gap: '1.5rem', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))' }}>
-//         <div style={cardStyle}>
-//           <div style={cardHeaderStyle}>
-//             <h2 style={cardTitleStyle}>
-//               <List style={{ height: '1.25rem', width: '1.25rem' }} />
-//               Course Outline and Syllabus
-//             </h2>
-//           </div>
-//           <div style={cardContentStyle}>
-//             <ul style={{ listStyleType: 'disc', paddingLeft: '1.25rem' }}>
-//               <li>Physics
-//                 <ul style={{ listStyleType: 'circle', paddingLeft: '1.25rem' }}>
-//                   <li>Mechanics</li>
-//                   <li>Thermodynamics</li>
-//                   <li>Electromagnetism</li>
-//                 </ul>
-//               </li>
-//               <li>Chemistry
-//                 <ul style={{ listStyleType: 'circle', paddingLeft: '1.25rem' }}>
-//                   <li>Organic Chemistry</li>
-//                   <li>Inorganic Chemistry</li>
-//                   <li>Physical Chemistry</li>
-//                 </ul>
-//               </li>
-//               <li>Mathematics
-//                 <ul style={{ listStyleType: 'circle', paddingLeft: '1.25rem' }}>
-//                   <li>Algebra</li>
-//                   <li>Calculus</li>
-//                   <li>Geometry and Trigonometry</li>
-//                 </ul>
-//               </li>
-//             </ul>
-//           </div>
-//         </div>
-
-//         <div style={cardStyle}>
-//           <div style={cardHeaderStyle}>
-//             <h2 style={cardTitleStyle}>
-//               <Clock style={{ height: '1.25rem', width: '1.25rem' }} />
-//               Timetable
-//             </h2>
-//           </div>
-//           <div style={cardContentStyle}>
-//             <table style={tableStyle}>
-//               <thead>
-//                 <tr>
-//                   <th style={thStyle}>Day</th>
-//                   <th style={thStyle}>9 AM - 11 AM</th>
-//                   <th style={thStyle}>1 PM - 3 PM</th>
-//                   <th style={thStyle}>4 PM - 6 PM</th>
-//                 </tr>
-//               </thead>
-//               <tbody>
-//                 <tr>
-//                   <td style={tdStyle}>Monday</td>
-//                   <td style={tdStyle}>Physics</td>
-//                   <td style={tdStyle}>Chemistry</td>
-//                   <td style={tdStyle}>Mathematics</td>
-//                 </tr>
-//                 <tr>
-//                   <td style={tdStyle}>Tuesday</td>
-//                   <td style={tdStyle}>Mathematics</td>
-//                   <td style={tdStyle}>Physics</td>
-//                   <td style={tdStyle}>Chemistry</td>
-//                 </tr>
-//                 <tr>
-//                   <td style={tdStyle}>Wednesday</td>
-//                   <td style={tdStyle}>Chemistry</td>
-//                   <td style={tdStyle}>Mathematics</td>
-//                   <td style={tdStyle}>Physics</td>
-//                 </tr>
-//               </tbody>
-//             </table>
-//           </div>
-//         </div>
-
-//         <div style={cardStyle}>
-//           <div style={cardHeaderStyle}>
-//             <h2 style={cardTitleStyle}>
-//               <Calendar style={{ height: '1.25rem', width: '1.25rem' }} />
-//               Important Dates
-//             </h2>
-//           </div>
-//           <div style={cardContentStyle}>
-//             <ul style={{ listStyleType: 'none', padding: 0 }}>
-//               <li style={{ marginBottom: '0.5rem' }}>
-//                 <span style={{ fontWeight: 'bold' }}>May 15, 2024:</span> JEE Main Application Deadline
-//               </li>
-//               <li style={{ marginBottom: '0.5rem' }}>
-//                 <span style={{ fontWeight: 'bold' }}>June 1-10, 2024:</span> JEE Main Exam (Session 1)
-//               </li>
-//               <li style={{ marginBottom: '0.5rem' }}>
-//                 <span style={{ fontWeight: 'bold' }}>July 15-25, 2024:</span> JEE Main Exam (Session 2)
-//               </li>
-//               <li style={{ marginBottom: '0.5rem' }}>
-//                 <span style={{ fontWeight: 'bold' }}>August 20, 2024:</span> JEE Advanced Registration Deadline
-//               </li>
-//               <li style={{ marginBottom: '0.5rem' }}>
-//                 <span style={{ fontWeight: 'bold' }}>September 5, 2024:</span> JEE Advanced Exam
-//               </li>
-//             </ul>
-//           </div>
-//         </div>
-
-//         <div style={cardStyle}>
-//           <div style={cardHeaderStyle}>
-//             <h2 style={cardTitleStyle}>
-//               <GraduationCap style={{ height: '1.25rem', width: '1.25rem' }} />
-//               Exam Dates
-//             </h2>
-//           </div>
-//           <div style={cardContentStyle}>
-//             <table style={tableStyle}>
-//               <thead>
-//                 <tr>
-//                   <th style={thStyle}>Exam</th>
-//                   <th style={thStyle}>Date</th>
-//                 </tr>
-//               </thead>
-//               <tbody>
-//                 <tr>
-//                   <td style={tdStyle}>Physics Mock Test</td>
-//                   <td style={tdStyle}>May 20, 2024</td>
-//                 </tr>
-//                 <tr>
-//                   <td style={tdStyle}>Chemistry Mock Test</td>
-//                   <td style={tdStyle}>May 27, 2024</td>
-//                 </tr>
-//                 <tr>
-//                   <td style={tdStyle}>Mathematics Mock Test</td>
-//                   <td style={tdStyle}>June 3, 2024</td>
-//                 </tr>
-//                 <tr>
-//                   <td style={tdStyle}>Full Length Mock JEE</td>
-//                   <td style={tdStyle}>June 15, 2024</td>
-//                 </tr>
-//               </tbody>
-//             </table>
-//           </div>
-//         </div>
-
-//         <div style={{ ...cardStyle, gridColumn: '1 / -1' }}>
-//           <div style={cardHeaderStyle}>
-//             <h2 style={cardTitleStyle}>
-//               <Star style={{ height: '1.25rem', width: '1.25rem' }} />
-//               Test Scores
-//             </h2>
-//           </div>
-//           <div style={cardContentStyle}>
-//             <table style={tableStyle}>
-//               <thead>
-//                 <tr>
-//                   <th style={thStyle}>Test Name</th>
-//                   <th style={thStyle}>Date</th>
-//                   <th style={thStyle}>Physics Score</th>
-//                   <th style={thStyle}>Chemistry Score</th>
-//                   <th style={thStyle}>Mathematics Score</th>
-//                   <th style={thStyle}>Total Score</th>
-//                 </tr>
-//               </thead>
-//               <tbody>
-//                 <tr>
-//                   <td style={tdStyle}>Mock Test 1</td>
-//                   <td style={tdStyle}>April 10, 2024</td>
-//                   <td style={tdStyle}>85/120</td>
-//                   <td style={tdStyle}>92/120</td>
-//                   <td style={tdStyle}>105/120</td>
-//                   <td style={tdStyle}>282/360</td>
-//                 </tr>
-//                 <tr>
-//                   <td style={tdStyle}>Mock Test 2</td>
-//                   <td style={tdStyle}>April 25, 2024</td>
-//                   <td style={tdStyle}>90/120</td>
-//                   <td style={tdStyle}>88/120</td>
-//                   <td style={tdStyle}>110/120</td>
-//                   <td style={tdStyle}>288/360</td>
-//                 </tr>
-//                 <tr>
-//                   <td style={tdStyle}>Mock Test 3</td>
-//                   <td style={tdStyle}>May 10, 2024</td>
-//                   <td style={tdStyle}>95/120</td>
-//                   <td style={tdStyle}>98/120</td>
-//                   <td style={tdStyle}>112/120</td>
-//                   <td style={tdStyle}>305/360</td>
-//                 </tr>
-//               </tbody>
-//             </table>
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
 import React from 'react';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import { Calendar, Clock, GraduationCap, List, Star } from "lucide-react";
 import { LineChart, Line, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 const styles = {
   container: {
     maxWidth: '1900px',
-    padding: '1rem',
+    margin: '0 auto',
+    padding: '1.5rem',
     backgroundColor: '#1a202c',
     color: '#e2e8f0',
     minHeight: '100vh',
   },
   heading: {
-    fontSize: '1.875rem',
+    fontSize: '2.5rem',
     fontWeight: 'bold',
-    marginBottom: '1.5rem',
+    marginBottom: '2rem',
     color: '#f7fafc',
+    textAlign: 'center',
   },
   grid: {
     display: 'grid',
-    gap: '1.5rem',
+    gap: '2rem',
     gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
   },
   card: {
     backgroundColor: '#2d3748',
-    borderRadius: '0.5rem',
-    boxShadow: '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)',
+    borderRadius: '0.75rem',
+    boxShadow: '0 2px 10px rgba(0, 0, 0, 0.1)',
     overflow: 'hidden',
   },
   cardHeader: {
-    padding: '1rem',
+    padding: '1.25rem',
     borderBottom: '1px solid #4a5568',
   },
   cardTitle: {
-    fontSize: '1.25rem',
+    fontSize: '1.5rem',
     fontWeight: 'bold',
     display: 'flex',
     alignItems: 'center',
-    gap: '0.5rem',
+    gap: '0.75rem',
     color: '#f7fafc',
   },
   cardContent: {
-    padding: '1rem',
+    padding: '1.25rem',
   },
   table: {
     width: '100%',
     borderCollapse: 'collapse',
-    fontSize: '0.875rem',
+    fontSize: '1rem',
   },
   th: {
     textAlign: 'left',
@@ -297,34 +59,89 @@ const styles = {
   td: {
     padding: '0.75rem',
     borderBottom: '1px solid #4a5568',
+    color: '#e2e8f0',
   },
   list: {
     listStyleType: 'disc',
-    paddingLeft: '1.25rem',
+    paddingLeft: '1.5rem',
   },
   subList: {
     listStyleType: 'circle',
-    paddingLeft: '1.25rem',
+    paddingLeft: '1.5rem',
   },
   importantDatesList: {
     listStyleType: 'none',
     padding: 0,
   },
   importantDatesItem: {
-    marginBottom: '0.5rem',
+    marginBottom: '0.75rem',
+    fontSize: '1rem',
+    color: '#e2e8f0',
   },
   importantDatesDate: {
     fontWeight: 'bold',
     color: '#a0aec0',
   },
   icon: {
-    height: '1.25rem',
-    width: '1.25rem',
+    height: '1.75rem',
+    width: '1.75rem',
     color: '#a0aec0',
   },
   chartContainer: {
-    height: '300px',
+    height: '350px',
     width: '100%',
+  },
+  button: {
+    padding: '0.75rem 1.5rem',
+    backgroundColor: '#38b2ac',
+    borderRadius: '0.5rem',
+    color: '#f7fafc',
+    fontSize: '1rem',
+    border: 'none',
+    cursor: 'pointer',
+    marginTop: '1rem',
+    marginBottom: '1rem',
+  },
+  header: {
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+    padding: "10px 20px",
+    borderBottom: "1px solid #ccc",
+    animation: "slideIn 1.5s ease-in-out",
+    backgroundColor: '#282c34', // Added background color
+    color: 'white', // Text color
+  },
+  logo: {
+    fontFamily: "Poppins, sans-serif",
+    fontSize: "28px",
+    fontWeight: 700,
+    lineHeight: "42px",
+    textAlign: "left",
+  },
+  nav: {
+    display: "flex",
+    alignItems: "center",
+    gap: "60px",
+    animation: "slideIn 1.5s ease-in-out",
+  },
+  navLink: {
+    color: "white", // Link color
+    textDecoration: "none",
+    fontSize: "26px",
+    animation: "slideIn 2s ease-in-out",
+    padding: "5px 10px", // Added padding for better clickability
+  },
+  profileIcon: {
+    display: "flex",
+    alignItems: "center",
+    marginLeft: "20px",
+    cursor: "pointer",
+  },
+  profileImage: {
+    width: "40px",
+    height: "40px",
+    borderRadius: "50%",
   },
 };
 
@@ -341,9 +158,36 @@ const subjectPerformanceData = [
 ];
 
 export default function JEEDashboard() {
-  return (
+  const navigate = useNavigate(); // Initialize useNavigate
+
+  const handleHealthButtonClick = () => {
+    navigate('/health'); // Navigate to /health
+  };
+
+  return (<>
+      <header style={styles.header}>
+      <h1 style={styles.logo}>ASPIRANTS LABYRINTH</h1>
+      <nav style={styles.nav}>
+        <a style={styles.navLink} href="/">Home</a>
+        <a style={styles.navLink} href="/dashboard">Dashboard</a>
+        <a style={styles.navLink} href="/resources">Resources</a>
+        <a style={styles.navLink} href="/tools">Tools</a>
+        {/* Example of a profile icon */}
+        <div style={styles.profileIcon}>
+          <img 
+            src="profile-pic-url" // Replace with your profile image URL
+            alt="Profile"
+            style={styles.profileImage}
+          />
+        </div>
+      </nav>
+    </header>
     <div style={styles.container}>
       <h1 style={styles.heading}>JEE Student Dashboard</h1>
+
+      <span>
+        <button style={styles.button} onClick={handleHealthButtonClick}>Check your Health</button>
+      </span>
       
       <div style={styles.grid}>
         <div style={styles.card}>
@@ -477,16 +321,12 @@ export default function JEEDashboard() {
                   <td style={styles.td}>Mathematics Mock Test</td>
                   <td style={styles.td}>June 3, 2024</td>
                 </tr>
-                <tr>
-                  <td style={styles.td}>Full Length Mock JEE</td>
-                  <td style={styles.td}>June 15, 2024</td>
-                </tr>
               </tbody>
             </table>
           </div>
         </div>
 
-        <div style={{...styles.card, gridColumn: '1 / -1'}}>
+        <div style={styles.card}>
           <div style={styles.cardHeader}>
             <h2 style={styles.cardTitle}>
               <Star style={styles.icon} />
@@ -497,14 +337,14 @@ export default function JEEDashboard() {
             <div style={styles.chartContainer}>
               <ResponsiveContainer width="100%" height="100%">
                 <LineChart data={testScoresData}>
-                  <CartesianGrid strokeDasharray="3 3" stroke="#4a5568" />
+                  <CartesianGrid strokeDasharray="3 3" />
                   <XAxis dataKey="name" stroke="#a0aec0" />
                   <YAxis stroke="#a0aec0" />
-                  <Tooltip contentStyle={{backgroundColor: '#2d3748', border: 'none'}} />
+                  <Tooltip />
                   <Legend />
-                  <Line type="monotone" dataKey="Physics" stroke="#48bb78" />
-                  <Line type="monotone" dataKey="Chemistry" stroke="#4299e1" />
-                  <Line type="monotone" dataKey="Mathematics" stroke="#ed8936" />
+                  <Line type="monotone" dataKey="Physics" stroke="#3182ce" />
+                  <Line type="monotone" dataKey="Chemistry" stroke="#38a169" />
+                  <Line type="monotone" dataKey="Mathematics" stroke="#e53e3e" />
                 </LineChart>
               </ResponsiveContainer>
             </div>
@@ -522,10 +362,10 @@ export default function JEEDashboard() {
             <div style={styles.chartContainer}>
               <ResponsiveContainer width="100%" height="100%">
                 <BarChart data={subjectPerformanceData}>
-                  <CartesianGrid strokeDasharray="3 3" stroke="#4a5568" />
+                  <CartesianGrid strokeDasharray="3 3" />
                   <XAxis dataKey="subject" stroke="#a0aec0" />
                   <YAxis stroke="#a0aec0" />
-                  <Tooltip contentStyle={{backgroundColor: '#2d3748', border: 'none'}} />
+                  <Tooltip />
                   <Legend />
                   <Bar dataKey="score" fill="#4299e1" />
                 </BarChart>
@@ -535,5 +375,6 @@ export default function JEEDashboard() {
         </div>
       </div>
     </div>
+    </>
   );
 }
